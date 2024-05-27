@@ -30,11 +30,17 @@ We want to analyze data to learn about patterns that can differentiate customers
 **Recommendations for ML model**
 
 • Further investigate and engineer features that might improve model performance and lower overfitting.
+
 • Perform a more thorough hyperparameter tuning using techniques such as Grid Search to fine-tune the model parameters and achieve better performance.
+
 • Adding features such as a policy price that potentially improve the model and can be explained better.
+
 • Beyond SMOTE, explore other resampling techniques such as ADASYN or SMOTE-ENN to handle the extreme class imbalance more effectively.
+
 • Implement cost-sensitive algorithms that assign different penalties to misclassification errors of the minority class (claims) and the majority class (non-claims).
+
 • Trying to explore other machine learning metrics as standard to find ways for improving precision and further reducing False Positive and True Negative.
+
 • It will be better to keep researching and applying other algorithms, while also trying to tune up and applying other resampling techniques, to this dataset to keep improving the performance
 
 
