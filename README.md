@@ -1,28 +1,31 @@
 # **Travel-Insurance-Claim-Prediction-using-Machine-Learning**
 Travel Insurance claim prediction using Adaptive Booster
 
-**Problem statement**
+##**Problem statement**
 Maintaining a sufficient balance between customer premiums with claims and expenses is a crucial issue in the travel insurance industry. The enterprise must be able to calculate the number of premiums that need to be collected and the number of claim that they will be able to handle. The travel insurance enterprise needs to be able to calculate the risk accurately. The ability to predict customers who are claim and not claim, and calculate the probability of it will help them in managing the risks. By being able to distinguish customers who are likely to claim and not claim, insurers can make better planning in the allocation of their funds, optimize their operations, potentially lower operational costs, and in overall improve profitability.
 
-**Goal**
+##**Goal**
 Based on the previous problem statement, an international travel insurance enterprise want to initiate predictive modelling for improving its risk assessment system. This model should be able to predict which one of their customers who is more likely to claim the insurance based on the given historical data. In addition to that, we want to know which risk factors or variables that are crucial in increasing customer probability to claim the insurance.
 Analytical approach
 We want to analyze data to learn about patterns that can differentiate customers who will claim the insurance and who will not. Then, we will build a classification model to help the travel insurance enterprise in predicting which policyholders that is more likely to claim travel insurance and which policyholders won't.
 
-**Conclusion**
-	• We are using the ROC AUC score as this matrix can be used as a good indicator for discriminating between claim and non-claim
-	• Our best model based on the result of the ROC AUC score, classification report, and confusion matrix is the tuned AdaBoost model that demonstrates a high reduction in both false positives and false negatives compared to the logistic regression and gradient boosting model. This model has an ROC AUC score of 0.715 that indicate 71.5% in distinguishing claim and non-claim. while this is not perfect, it provides a reasonable level of discrimination ability, particularly in the context of a highly imbalanced dataset.
-	• The best parameter of the tuned AdaBoost model consists of:
+##**Conclusion**
+	
+• Our best model based on the result of the ROC AUC score, classification report, and confusion matrix is the tuned AdaBoost model that demonstrates a high reduction in both false positives and false negatives compared to the logistic regression and gradient boosting model. This model has an ROC AUC score of 0.715 that indicate 71.5% in distinguishing claim and non-claim. while this is not perfect, it provides a reasonable level of discrimination ability, particularly in the context of a highly imbalanced dataset.
+	
+ • The best parameter of the tuned AdaBoost model consists of:
 		○ n_estimators : 180
 		○ learning_rate : 0.01
 		○ max_depth: 2
-	• Based on feature importance, features that crucial for claim the AdaBoost model consist of 'Agency_3', 'Net Sales', 'Commission (in value)', 'Product Name_3', and 'Destination_3'. This suggests that specific agencies, financial metrics, and insurance product types, play an important role in claim predictions.
-	• Based on local interpretation using LIME (Local Interpretable Model-agnostic Explanations) for the AdaBoost model,
+
+• Based on feature importance, features that crucial for claim the AdaBoost model consist of 'Agency_3', 'Net Sales', 'Commission (in value)', 'Product Name_3', and 'Destination_3'. This suggests that specific agencies, financial metrics, and insurance product types, play an important role in claim predictions.
+
+• Based on local interpretation using LIME (Local Interpretable Model-agnostic Explanations) for the AdaBoost model,
 		○ 'Net Sales' & 'Commision in (Value)': A higher value of these features contributes positively to the likelihood of a claim.
 		○ 'Duration' or 'Duration Group': Longer coverage durations might increase the likelihood of claims due to the extended period of risk exposure.
 		○ 'Destination': A specific destination like 'Singapore' is associated with more claims.
 
-Recommendations for ML model
+##**Recommendations for ML model**
 	• Further investigate and engineer features that might improve model performance and lower overfitting.
 	• Perform a more thorough hyperparameter tuning using techniques such as Grid Search to fine-tune the model parameters and achieve better performance.
 	• Adding features such as a policy price that potentially improve the model and can be explained better.
