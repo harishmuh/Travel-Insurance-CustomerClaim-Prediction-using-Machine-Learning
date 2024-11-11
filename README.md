@@ -26,9 +26,9 @@ The travel insurance dataset (private) can be accessed through this [link](https
 * Based on feature importance, features that are crucial for the AdaBoost model travel insurance claim consist of 'Agency_3', 'Net Sales', 'Commission (in value)', 'Product Name_3', and 'Destination_3'. This suggests that specific agencies, financial metrics, and insurance product types, play an important role in the claim prediction model.
 
 * Based on local interpretation using LIME (Local Interpretable Model-agnostic Explanations) for the AdaBoost model,
-** 'Net Sales' & 'Commision in (Value)': A higher value of these features contributes positively to the likelihood of a claim.
-** 'Duration' or 'Duration Group': Longer coverage durations might increase the likelihood of claims due to the extended period of risk exposure.
-** 'Destination': A specific destination like 'Singapore' is associated with more claims.
+  * 'Net Sales' & 'Commision in (Value)': A higher value of these features contributes positively to the likelihood of a claim.
+  * 'Duration' or 'Duration Group': Longer coverage durations might increase the likelihood of claims due to the extended period of risk exposure.
+  * 'Destination': A specific destination like 'Singapore' is associated with more claims.
 
 ## **Recommendations for Machine Learning model**
 
