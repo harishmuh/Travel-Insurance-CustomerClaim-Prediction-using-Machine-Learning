@@ -9,9 +9,9 @@ Maintaining a sufficient balance between customer premiums with claims and expen
 
 **Goal**
 
-Based on the previous problem statement, an international travel insurance enterprise wants to initiate predictive modeling for improving its risk assessment system. This model should be able to predict which one of their customers who is more likely to claim the insurance based on the given historical data. In addition to that, we want to know which risk factors or variables that are crucial in increasing customer probability to claim the insurance.
+Based on the previous problem statement, an international travel insurance enterprise wants to initiate predictive modeling to improve its risk assessment system. This model should be able to predict which one of their customers who is more likely to claim the insurance based on the given historical data. In addition to that, we want to know which risk factors or variables that are crucial in increasing customer probability to claim the insurance.
 Analytical approach
-We want to analyze data to learn about patterns that can differentiate customers who will claim the insurance and who will not. Then, we will build a classification model to help the travel insurance enterprise in predicting which policyholders that is more likely to claim travel insurance and which policyholders won't.
+We want to analyze data to learn about patterns that can differentiate customers who will claim the insurance and who will not. Then, we will build a classification model to help the travel insurance enterprise predict which policyholders that is more likely to claim travel insurance and which policyholders won't.
 
 **Dataset source**
 
@@ -21,12 +21,9 @@ The travel insurance dataset (private) can be accessed through this [link](https
 	
 • Our best model based on the result of the ROC AUC score, classification report, and confusion matrix is the tuned AdaBoost model that demonstrates a high reduction in both false positives and false negatives compared to the logistic regression and gradient boosting model. This model has an ROC AUC score of 0.715 which indicates 71.5% in distinguishing claim and non-claim. while this is not perfect, it provides a reasonable level of discrimination ability, particularly in the context of a highly imbalanced dataset.
 	
- • The best parameter of the tuned AdaBoost model consists of:
- 	* n_estimators : 180
-	* learning_rate : 0.01
-	* max_depth: 2
+ • The best parameter of the tuned AdaBoost model consists of n_estimators (180), learning_rate (0.01), and max_depth (2)
 
-• Based on feature importance, features that crucial for claim the AdaBoost model consist of 'Agency_3', 'Net Sales', 'Commission (in value)', 'Product Name_3', and 'Destination_3'. This suggests that specific agencies, financial metrics, and insurance product types, play an important role in claim predictions.
+• Based on feature importance, features that are crucial for the AdaBoost model travel insurance claim consist of 'Agency_3', 'Net Sales', 'Commission (in value)', 'Product Name_3', and 'Destination_3'. This suggests that specific agencies, financial metrics, and insurance product types, play an important role in claim predictions.
 
 • Based on local interpretation using LIME (Local Interpretable Model-agnostic Explanations) for the AdaBoost model,
 		○ 'Net Sales' & 'Commision in (Value)': A higher value of these features contributes positively to the likelihood of a claim.
