@@ -14,7 +14,8 @@ Analytical approach
 We want to analyze data to learn about patterns that can differentiate customers who will claim the insurance and who will not. Then, we will build a classification model to help the travel insurance enterprise in predicting which policyholders that is more likely to claim travel insurance and which policyholders won't.
 
 **Dataset source**
-The travel insurance dataset can be accessed through this [link](https://drive.google.com/file/d/1emDTGFvku7UuuVT3W-EmEvg3i61QrIU-/view)
+
+The travel insurance dataset (private) can be accessed through this [link](https://drive.google.com/file/d/1emDTGFvku7UuuVT3W-EmEvg3i61QrIU-/view)
 
 ## **Conclusion**
 	
