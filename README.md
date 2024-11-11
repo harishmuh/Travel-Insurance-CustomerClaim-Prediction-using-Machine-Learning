@@ -19,31 +19,33 @@ The travel insurance dataset (private) can be accessed through this [link](https
 
 ## **Conclusion**
 	
-• Our best model based on the result of the ROC AUC score, classification report, and confusion matrix is the tuned AdaBoost model that demonstrates a high reduction in both false positives and false negatives compared to the logistic regression and gradient boosting model. This model has an ROC AUC score of 0.715 which indicates 71.5% in distinguishing claim and non-claim. while this is not perfect, it provides a reasonable level of discrimination ability, particularly in the context of a highly imbalanced dataset.
+* Our best model based on the result of the ROC AUC score, classification report, and confusion matrix is the tuned AdaBoost model that demonstrates a high reduction in both false positives and false negatives compared to the logistic regression and gradient boosting model. This model has an ROC AUC score of 0.715 which indicates 71.5% in distinguishing claim and non-claim. while this is not perfect, it provides a reasonable level of discrimination ability, particularly in the context of a highly imbalanced dataset.
 	
- • The best parameter of the tuned AdaBoost model consists of n_estimators (180), learning_rate (0.01), and max_depth (2)
+* The best parameter of the tuned AdaBoost model consists of n_estimators (180), learning_rate (0.01), and max_depth (2)
 
-• Based on feature importance, features that are crucial for the AdaBoost model travel insurance claim consist of 'Agency_3', 'Net Sales', 'Commission (in value)', 'Product Name_3', and 'Destination_3'. This suggests that specific agencies, financial metrics, and insurance product types, play an important role in claim predictions.
+* Based on feature importance, features that are crucial for the AdaBoost model travel insurance claim consist of 'Agency_3', 'Net Sales', 'Commission (in value)', 'Product Name_3', and 'Destination_3'. This suggests that specific agencies, financial metrics, and insurance product types, play an important role in the claim prediction model.
 
-• Based on local interpretation using LIME (Local Interpretable Model-agnostic Explanations) for the AdaBoost model,
-		○ 'Net Sales' & 'Commision in (Value)': A higher value of these features contributes positively to the likelihood of a claim.
-		○ 'Duration' or 'Duration Group': Longer coverage durations might increase the likelihood of claims due to the extended period of risk exposure.
-		○ 'Destination': A specific destination like 'Singapore' is associated with more claims.
+* Based on local interpretation using LIME (Local Interpretable Model-agnostic Explanations) for the AdaBoost model,
+** 'Net Sales' & 'Commision in (Value)': A higher value of these features contributes positively to the likelihood of a claim.
+** 'Duration' or 'Duration Group': Longer coverage durations might increase the likelihood of claims due to the extended period of risk exposure.
+** 'Destination': A specific destination like 'Singapore' is associated with more claims.
 
-## **Recommendations for ML model**
+## **Recommendations for Machine Learning model**
 
-• Further investigate and engineer features that might improve model performance and lower overfitting.
+* Further investigate and research features that might improve model performance and lower overfitting.
 
-• Perform a more thorough hyperparameter tuning using techniques such as Grid Search to fine-tune the model parameters and achieve better performance.
+* Perform a more thorough hyperparameter tuning using techniques such as Grid Search to fine-tune the model parameters and achieve better performance.
 
-• Adding features such as a policy price that potentially improve the model and can be explained better.
+* Adding features such as a policy price that potentially improve the model and can be explained better.
 
-• Beyond SMOTE, explore other resampling techniques such as ADASYN or SMOTE-ENN to handle the extreme class imbalance more effectively.
+* Beyond SMOTE, explore other resampling techniques such as ADASYN or SMOTE-ENN to handle the extreme class imbalance more effectively.
 
-• Implement cost-sensitive algorithms that assign different penalties to misclassification errors of the minority class (claims) and the majority class (non-claims).
+* Implement cost-sensitive algorithms that assign different penalties to misclassification errors of the minority class (claims) and the majority class (non-claims).
 
-• Trying to explore other machine learning metrics as standard to find ways for improving precision and further reducing False Positive and True Negative.
+* Trying to explore other machine learning metrics as standard to find ways for improving precision and further reducing False Positive and True Negative.
 
-• It will be better to keep researching and applying other algorithms, while also trying to tune up and applying other resampling techniques, to this dataset to keep improving the performance
+## **Assets**
+* [Presentation(PDF)](https://github.com/harishmuh/Travel-Insurance-CustomerClaim-Prediction-using-Machine-Learning/blob/main/Travel%20Insurance%20-%20Claim%20Prediction.pdf)
+* [ML & Data Analyst Notebook](https://github.com/harishmuh/Travel-Insurance-CustomerClaim-Prediction-using-Machine-Learning/blob/main/travel_insurance%20%20-%20Harish%20Muhammad.ipynb)
 
 
