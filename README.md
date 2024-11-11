@@ -19,12 +19,12 @@ The travel insurance dataset (private) can be accessed through this [link](https
 
 ## **Conclusion**
 	
-• Our best model based on the result of the ROC AUC score, classification report, and confusion matrix is the tuned AdaBoost model that demonstrates a high reduction in both false positives and false negatives compared to the logistic regression and gradient boosting model. This model has an ROC AUC score of 0.715 that indicate 71.5% in distinguishing claim and non-claim. while this is not perfect, it provides a reasonable level of discrimination ability, particularly in the context of a highly imbalanced dataset.
+• Our best model based on the result of the ROC AUC score, classification report, and confusion matrix is the tuned AdaBoost model that demonstrates a high reduction in both false positives and false negatives compared to the logistic regression and gradient boosting model. This model has an ROC AUC score of 0.715 which indicates 71.5% in distinguishing claim and non-claim. while this is not perfect, it provides a reasonable level of discrimination ability, particularly in the context of a highly imbalanced dataset.
 	
  • The best parameter of the tuned AdaBoost model consists of:
-		○ n_estimators : 180
-		○ learning_rate : 0.01
-		○ max_depth: 2
+ 	* n_estimators : 180
+	* learning_rate : 0.01
+	* max_depth: 2
 
 • Based on feature importance, features that crucial for claim the AdaBoost model consist of 'Agency_3', 'Net Sales', 'Commission (in value)', 'Product Name_3', and 'Destination_3'. This suggests that specific agencies, financial metrics, and insurance product types, play an important role in claim predictions.
 
