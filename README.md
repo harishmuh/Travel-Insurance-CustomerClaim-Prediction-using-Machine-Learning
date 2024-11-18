@@ -12,6 +12,7 @@ Maintaining a sufficient balance between customer premiums with claims and expen
 Based on the previous problem statement, an international travel insurance enterprise wants to initiate predictive modeling to improve its risk assessment system. This model should be able to predict which one of their customers is more likely to claim the insurance based on the given historical data. In addition to that, we want to know which risk factors or variables that are crucial in increasing customer probability to claim the insurance.
 
 **Analytical approach**
+
 We want to analyze data to learn about patterns that can differentiate customers based on who will claim the insurance and who will not. We will build classification models to help the travel insurance enterprise predict which policyholders that is more likely to claim travel insurance and which policyholders won't. After that, We will compare the classification model using nine different machine learning models consisting of Logistic Regression, AdaBoost, Gradient Booster, LightGBM, CatBoost, XGBoost, Random Forest, Decision Tree, and KNN. Next, we will conduct hyperparameter tuning on the three best models and compare the performance metrics using ROC-AUC. 
 
 
@@ -61,7 +62,7 @@ The travel insurance dataset (private) can be accessed through this [link](https
 * Trying to explore other machine learning metrics as standard to find ways for improving precision and further reducing False Positive and True Negative.
 
 ## **Assets**
-* [Presentation(PDF)](https://github.com/harishmuh/Travel-Insurance-CustomerClaim-Prediction-using-Machine-Learning/blob/main/Travel%20Insurance%20-%20Claim%20Prediction.pdf)
+* [Presentation (PDF)](https://github.com/harishmuh/Travel-Insurance-CustomerClaim-Prediction-using-Machine-Learning/blob/main/Travel%20Insurance%20-%20Claim%20Prediction.pdf)
 * [ML & Data Analyst Notebook](https://github.com/harishmuh/Travel-Insurance-CustomerClaim-Prediction-using-Machine-Learning/blob/main/travel_insurance%20%20-%20Harish%20Muhammad.ipynb)
 
 
